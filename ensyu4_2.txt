@@ -1,0 +1,34 @@
+使用DBMS : MySQL
+
+SQL文) SELECT pref_name FROM ensyu41;
+実行結果)
++-----------+
+| pref_name |
++-----------+
+| 徳島      |
+| 徳島      |
+| NULL      |
+| 香川      |
+| NULL      |
+| 愛媛      |
+| 高知      |
++-----------+
+7 rows in set (0.000 sec)
+
+
+SQL文) SELECT CONCAT(pref_name, '県') FROM ensyu41;
+実行結果)
++-------------------------+
+| CONCAT(pref_name, '県') |
++-------------------------+
+| 徳島県                  |
+| 徳島県                  |
+| NULL                    |
+| 香川県                  |
+| NULL                    |
+| 愛媛県                  |
+| 高知県                  |
++-------------------------+
+7 rows in set (0.000 sec)
+
+NULLと文字列の連結の結果はNULLになる
